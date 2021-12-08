@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3827FC6891CD93F85FA717D5 /* Pods_PetPad_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEFFAF76763DF510B09C756 /* Pods_PetPad_Firebase.framework */; };
+		62580D0E275E484400125731 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62580D0C275E484400125731 /* StoryCell.swift */; };
+		62580D0F275E484400125731 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62580D0D275E484400125731 /* StoryCell.xib */; };
+		6262C50E271E90A2005A3AE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262C50D271E90A2005A3AE9 /* LoginViewController.swift */; };
+		6262C511271E90D8005A3AE9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262C510271E90D8005A3AE9 /* RegisterViewController.swift */; };
+		6285B1DA273D64D600495DC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */; };
+		62912326271DA86B00BBB2D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62912325271DA86B00BBB2D6 /* AppDelegate.swift */; };
+		6291232A271DA86B00BBB2D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62912329271DA86B00BBB2D6 /* HomeViewController.swift */; };
+		6291232D271DA86B00BBB2D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6291232B271DA86B00BBB2D6 /* Main.storyboard */; };
+		6291232F271DA86E00BBB2D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6291232E271DA86E00BBB2D6 /* Assets.xcassets */; };
+		62912332271DA86E00BBB2D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62912330271DA86E00BBB2D6 /* LaunchScreen.storyboard */; };
+		62E029AE27219F160033E924 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E029AD27219F160033E924 /* SceneDelegate.swift */; };
+		62E029B62721A90D0033E924 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E029B52721A90D0033E924 /* UIViewController+Ext.swift */; };
+		62E9D9702760A966001F8732 /* PostStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9D96F2760A965001F8732 /* PostStoryViewController.swift */; };
+		62E9D9732760ABD2001F8732 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9D9722760ABD2001F8732 /* UIView+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C9650A6F264E6BD4742ED20 /* Pods-PetPad-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPad-Firebase.debug.xcconfig"; path = "Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		62580D0C275E484400125731 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		62580D0D275E484400125731 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
+		6262C50D271E90A2005A3AE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6262C510271E90D8005A3AE9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62912322271DA86B00BBB2D6 /* PetPad-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetPad-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62912325271DA86B00BBB2D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62912329271DA86B00BBB2D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6291232C271DA86B00BBB2D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6291232E271DA86E00BBB2D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62912331271DA86E00BBB2D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62912333271DA86F00BBB2D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62E029AD27219F160033E924 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		62E029B52721A90D0033E924 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		62E9D96F2760A965001F8732 /* PostStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStoryViewController.swift; sourceTree = "<group>"; };
+		62E9D9722760ABD2001F8732 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		7BEFFAF76763DF510B09C756 /* Pods_PetPad_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetPad_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAFA1E2F14E554D0486FADA /* Pods-PetPad-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPad-Firebase.release.xcconfig"; path = "Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6291231F271DA86B00BBB2D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3827FC6891CD93F85FA717D5 /* Pods_PetPad_Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62580D0A275E478A00125731 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				62912330271DA86E00BBB2D6 /* LaunchScreen.storyboard */,
+				6291232B271DA86B00BBB2D6 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		62580D0B275E480D00125731 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				62580D0C275E484400125731 /* StoryCell.swift */,
+				62580D0D275E484400125731 /* StoryCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6262C513271E9114005A3AE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62580D0B275E480D00125731 /* Cells */,
+				62912329271DA86B00BBB2D6 /* HomeViewController.swift */,
+				6262C50D271E90A2005A3AE9 /* LoginViewController.swift */,
+				6262C510271E90D8005A3AE9 /* RegisterViewController.swift */,
+				62E9D96F2760A965001F8732 /* PostStoryViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6262C514271E9140005A3AE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6262C515271E9147005A3AE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6262C516271E9256005A3AE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62E029AD27219F160033E924 /* SceneDelegate.swift */,
+				62912325271DA86B00BBB2D6 /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		62912319271DA86B00BBB2D6 = {
+			isa = PBXGroup;
+			children = (
+				62912324271DA86B00BBB2D6 /* PetPad-Firebase */,
+				62912323271DA86B00BBB2D6 /* Products */,
+				AFFD536E4A3C6A73692B76AB /* Pods */,
+				7B8D7338FE551593516A07BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62912323271DA86B00BBB2D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62912322271DA86B00BBB2D6 /* PetPad-Firebase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62912324271DA86B00BBB2D6 /* PetPad-Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */,
+				62912333271DA86F00BBB2D6 /* Info.plist */,
+				62E9D9712760AB95001F8732 /* Resources */,
+				62580D0A275E478A00125731 /* Storyboards */,
+				62E029B42721A8D20033E924 /* Extensions */,
+				6262C516271E9256005A3AE9 /* Common */,
+				6262C515271E9147005A3AE9 /* Controllers */,
+				6262C514271E9140005A3AE9 /* Models */,
+				6262C513271E9114005A3AE9 /* Views */,
+			);
+			path = "PetPad-Firebase";
+			sourceTree = "<group>";
+		};
+		62E029B42721A8D20033E924 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62E029B52721A90D0033E924 /* UIViewController+Ext.swift */,
+				62E9D9722760ABD2001F8732 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		62E9D9712760AB95001F8732 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6291232E271DA86E00BBB2D6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7B8D7338FE551593516A07BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BEFFAF76763DF510B09C756 /* Pods_PetPad_Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFFD536E4A3C6A73692B76AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C9650A6F264E6BD4742ED20 /* Pods-PetPad-Firebase.debug.xcconfig */,
+				9BAFA1E2F14E554D0486FADA /* Pods-PetPad-Firebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62912321271DA86B00BBB2D6 /* PetPad-Firebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62912336271DA86F00BBB2D6 /* Build configuration list for PBXNativeTarget "PetPad-Firebase" */;
+			buildPhases = (
+				7CECF9436464BFCC70FC2291 /* [CP] Check Pods Manifest.lock */,
+				6291231E271DA86B00BBB2D6 /* Sources */,
+				6291231F271DA86B00BBB2D6 /* Frameworks */,
+				62912320271DA86B00BBB2D6 /* Resources */,
+				1F74A888F46017B744B82923 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PetPad-Firebase";
+			productName = "PetPad-Firebase";
+			productReference = 62912322271DA86B00BBB2D6 /* PetPad-Firebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6291231A271DA86B00BBB2D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					62912321271DA86B00BBB2D6 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 6291231D271DA86B00BBB2D6 /* Build configuration list for PBXProject "PetPad-Firebase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62912319271DA86B00BBB2D6;
+			productRefGroup = 62912323271DA86B00BBB2D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62912321271DA86B00BBB2D6 /* PetPad-Firebase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62912320271DA86B00BBB2D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62912332271DA86E00BBB2D6 /* LaunchScreen.storyboard in Resources */,
+				6285B1DA273D64D600495DC6 /* GoogleService-Info.plist in Resources */,
+				6291232F271DA86E00BBB2D6 /* Assets.xcassets in Resources */,
+				6291232D271DA86B00BBB2D6 /* Main.storyboard in Resources */,
+				62580D0F275E484400125731 /* StoryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F74A888F46017B744B82923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CECF9436464BFCC70FC2291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetPad-Firebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6291231E271DA86B00BBB2D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E029AE27219F160033E924 /* SceneDelegate.swift in Sources */,
+				6262C511271E90D8005A3AE9 /* RegisterViewController.swift in Sources */,
+				62E029B62721A90D0033E924 /* UIViewController+Ext.swift in Sources */,
+				62580D0E275E484400125731 /* StoryCell.swift in Sources */,
+				6291232A271DA86B00BBB2D6 /* HomeViewController.swift in Sources */,
+				62E9D9732760ABD2001F8732 /* UIView+Ext.swift in Sources */,
+				6262C50E271E90A2005A3AE9 /* LoginViewController.swift in Sources */,
+				62E9D9702760A966001F8732 /* PostStoryViewController.swift in Sources */,
+				62912326271DA86B00BBB2D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6291232B271DA86B00BBB2D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6291232C271DA86B00BBB2D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62912330271DA86E00BBB2D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62912331271DA86E00BBB2D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62912334271DA86F00BBB2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62912335271DA86F00BBB2D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62912337271DA86F00BBB2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9650A6F264E6BD4742ED20 /* Pods-PetPad-Firebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = "PetPad-Firebase/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sendo.PetPad-Firebase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		62912338271DA86F00BBB2D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAFA1E2F14E554D0486FADA /* Pods-PetPad-Firebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = "PetPad-Firebase/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sendo.PetPad-Firebase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6291231D271DA86B00BBB2D6 /* Build configuration list for PBXProject "PetPad-Firebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62912334271DA86F00BBB2D6 /* Debug */,
+				62912335271DA86F00BBB2D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62912336271DA86F00BBB2D6 /* Build configuration list for PBXNativeTarget "PetPad-Firebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62912337271DA86F00BBB2D6 /* Debug */,
+				62912338271DA86F00BBB2D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6291231A271DA86B00BBB2D6 /* Project object */;
+}
