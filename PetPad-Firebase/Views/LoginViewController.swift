@@ -6,16 +6,17 @@
 //
 
 import UIKit
-//import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        
         // Do any additional setup after loading the view.
 //        print("TES", self.navigationController)
     }

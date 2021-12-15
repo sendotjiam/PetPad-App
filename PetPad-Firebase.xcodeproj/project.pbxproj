@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3827FC6891CD93F85FA717D5 /* Pods_PetPad_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEFFAF76763DF510B09C756 /* Pods_PetPad_Firebase.framework */; };
+		6211AF592768E5D70005402E /* PostStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211AF582768E5D70005402E /* PostStoryController.swift */; };
 		62580D0E275E484400125731 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62580D0C275E484400125731 /* StoryCell.swift */; };
 		62580D0F275E484400125731 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62580D0D275E484400125731 /* StoryCell.xib */; };
 		6262C50E271E90A2005A3AE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262C50D271E90A2005A3AE9 /* LoginViewController.swift */; };
 		6262C511271E90D8005A3AE9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262C510271E90D8005A3AE9 /* RegisterViewController.swift */; };
+		627BCD6527673F83009B3C56 /* StoryDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BCD6427673F83009B3C56 /* StoryDB.swift */; };
+		627BCD6727675193009B3C56 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BCD6627675192009B3C56 /* UserDB.swift */; };
 		6285B1DA273D64D600495DC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */; };
 		62912326271DA86B00BBB2D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62912325271DA86B00BBB2D6 /* AppDelegate.swift */; };
 		6291232A271DA86B00BBB2D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62912329271DA86B00BBB2D6 /* HomeViewController.swift */; };
@@ -22,14 +24,20 @@
 		62E029B62721A90D0033E924 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E029B52721A90D0033E924 /* UIViewController+Ext.swift */; };
 		62E9D9702760A966001F8732 /* PostStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9D96F2760A965001F8732 /* PostStoryViewController.swift */; };
 		62E9D9732760ABD2001F8732 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9D9722760ABD2001F8732 /* UIView+Ext.swift */; };
+		62F2F0AF2769DA57006079A7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F2F0AE2769DA57006079A7 /* Constant.swift */; };
+		62F2F0B12769DF58006079A7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F2F0B02769DF58006079A7 /* HomeController.swift */; };
+		8D1D0C18A5080B3D9C09414D /* Pods_PetPad_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A52536254187612A7B0A4E /* Pods_PetPad_Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C9650A6F264E6BD4742ED20 /* Pods-PetPad-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPad-Firebase.debug.xcconfig"; path = "Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		09A52536254187612A7B0A4E /* Pods_PetPad_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetPad_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6211AF582768E5D70005402E /* PostStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStoryController.swift; sourceTree = "<group>"; };
 		62580D0C275E484400125731 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
 		62580D0D275E484400125731 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
 		6262C50D271E90A2005A3AE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6262C510271E90D8005A3AE9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		627BCD6427673F83009B3C56 /* StoryDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDB.swift; sourceTree = "<group>"; };
+		627BCD6627675192009B3C56 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62912322271DA86B00BBB2D6 /* PetPad-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PetPad-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62912325271DA86B00BBB2D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +50,10 @@
 		62E029B52721A90D0033E924 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		62E9D96F2760A965001F8732 /* PostStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStoryViewController.swift; sourceTree = "<group>"; };
 		62E9D9722760ABD2001F8732 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		7BEFFAF76763DF510B09C756 /* Pods_PetPad_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetPad_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BAFA1E2F14E554D0486FADA /* Pods-PetPad-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPad-Firebase.release.xcconfig"; path = "Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		62F2F0AE2769DA57006079A7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		62F2F0B02769DF58006079A7 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		9E059CC33B936E1FFF2F6006 /* Pods-PetPad-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPad-Firebase.release.xcconfig"; path = "Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		D9A366E428B8F775206B8519 /* Pods-PetPad-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPad-Firebase.debug.xcconfig"; path = "Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +61,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3827FC6891CD93F85FA717D5 /* Pods_PetPad_Firebase.framework in Frameworks */,
+				8D1D0C18A5080B3D9C09414D /* Pods_PetPad_Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6211AF5A2768F1020005402E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				62F2F0AE2769DA57006079A7 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6211AF5B2768F1140005402E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				62E029B42721A8D20033E924 /* Extensions */,
+				62325703276733220077A9AE /* Helpers */,
+				6262C516271E9256005A3AE9 /* Common */,
+				6211AF5A2768F1020005402E /* Constants */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		62325703276733220077A9AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				627BCD6427673F83009B3C56 /* StoryDB.swift */,
+				627BCD6627675192009B3C56 /* UserDB.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		62580D0A275E478A00125731 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +136,8 @@
 		6262C515271E9147005A3AE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6211AF582768E5D70005402E /* PostStoryController.swift */,
+				62F2F0B02769DF58006079A7 /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,7 +157,7 @@
 				62912324271DA86B00BBB2D6 /* PetPad-Firebase */,
 				62912323271DA86B00BBB2D6 /* Products */,
 				AFFD536E4A3C6A73692B76AB /* Pods */,
-				7B8D7338FE551593516A07BA /* Frameworks */,
+				CDF653C20B434F9432D324CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,12 +172,11 @@
 		62912324271DA86B00BBB2D6 /* PetPad-Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */,
+				6211AF5B2768F1140005402E /* Utils */,
 				62912333271DA86F00BBB2D6 /* Info.plist */,
+				6285B1D9273D64D600495DC6 /* GoogleService-Info.plist */,
 				62E9D9712760AB95001F8732 /* Resources */,
 				62580D0A275E478A00125731 /* Storyboards */,
-				62E029B42721A8D20033E924 /* Extensions */,
-				6262C516271E9256005A3AE9 /* Common */,
 				6262C515271E9147005A3AE9 /* Controllers */,
 				6262C514271E9140005A3AE9 /* Models */,
 				6262C513271E9114005A3AE9 /* Views */,
@@ -162,21 +201,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7B8D7338FE551593516A07BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7BEFFAF76763DF510B09C756 /* Pods_PetPad_Firebase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AFFD536E4A3C6A73692B76AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2C9650A6F264E6BD4742ED20 /* Pods-PetPad-Firebase.debug.xcconfig */,
-				9BAFA1E2F14E554D0486FADA /* Pods-PetPad-Firebase.release.xcconfig */,
+				D9A366E428B8F775206B8519 /* Pods-PetPad-Firebase.debug.xcconfig */,
+				9E059CC33B936E1FFF2F6006 /* Pods-PetPad-Firebase.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CDF653C20B434F9432D324CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09A52536254187612A7B0A4E /* Pods_PetPad_Firebase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,11 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62912336271DA86F00BBB2D6 /* Build configuration list for PBXNativeTarget "PetPad-Firebase" */;
 			buildPhases = (
-				7CECF9436464BFCC70FC2291 /* [CP] Check Pods Manifest.lock */,
+				31A6107E4E7EF7AC73814582 /* [CP] Check Pods Manifest.lock */,
 				6291231E271DA86B00BBB2D6 /* Sources */,
 				6291231F271DA86B00BBB2D6 /* Frameworks */,
 				62912320271DA86B00BBB2D6 /* Resources */,
-				1F74A888F46017B744B82923 /* [CP] Embed Pods Frameworks */,
+				D36CD3843A15A311FA0528FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,24 +288,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F74A888F46017B744B82923 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7CECF9436464BFCC70FC2291 /* [CP] Check Pods Manifest.lock */ = {
+		31A6107E4E7EF7AC73814582 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +310,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D36CD3843A15A311FA0528FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetPad-Firebase/Pods-PetPad-Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -295,12 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627BCD6727675193009B3C56 /* UserDB.swift in Sources */,
+				627BCD6527673F83009B3C56 /* StoryDB.swift in Sources */,
+				62F2F0B12769DF58006079A7 /* HomeController.swift in Sources */,
 				62E029AE27219F160033E924 /* SceneDelegate.swift in Sources */,
 				6262C511271E90D8005A3AE9 /* RegisterViewController.swift in Sources */,
 				62E029B62721A90D0033E924 /* UIViewController+Ext.swift in Sources */,
 				62580D0E275E484400125731 /* StoryCell.swift in Sources */,
 				6291232A271DA86B00BBB2D6 /* HomeViewController.swift in Sources */,
+				6211AF592768E5D70005402E /* PostStoryController.swift in Sources */,
 				62E9D9732760ABD2001F8732 /* UIView+Ext.swift in Sources */,
+				62F2F0AF2769DA57006079A7 /* Constant.swift in Sources */,
 				6262C50E271E90A2005A3AE9 /* LoginViewController.swift in Sources */,
 				62E9D9702760A966001F8732 /* PostStoryViewController.swift in Sources */,
 				62912326271DA86B00BBB2D6 /* AppDelegate.swift in Sources */,
@@ -447,7 +491,7 @@
 		};
 		62912337271DA86F00BBB2D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C9650A6F264E6BD4742ED20 /* Pods-PetPad-Firebase.debug.xcconfig */;
+			baseConfigurationReference = D9A366E428B8F775206B8519 /* Pods-PetPad-Firebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,7 +511,7 @@
 		};
 		62912338271DA86F00BBB2D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BAFA1E2F14E554D0486FADA /* Pods-PetPad-Firebase.release.xcconfig */;
+			baseConfigurationReference = 9E059CC33B936E1FFF2F6006 /* Pods-PetPad-Firebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

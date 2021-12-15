@@ -7,8 +7,8 @@ target 'PetPad-Firebase' do
 
   # Pods for PetPad-Firebase
 #  pod 'Firebase'
-  pod 'Firebase/Core'
+#  pod 'Firebase/Core'
 #  pod 'Firebase/Auth'
-#  pod 'Firebase/Firestore'
+  pod 'Firebase/Firestore'
 
 end

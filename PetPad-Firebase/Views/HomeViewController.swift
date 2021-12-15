@@ -6,16 +6,20 @@
 //
 
 import UIKit
-import Firebase
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    private let homeController = HomeController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "StoryCell", bundle: nil), forCellReuseIdentifier: "StoryCell")
+        
+        homeController.getStories()
 //        authenticateCurrentUser()
     }
     
