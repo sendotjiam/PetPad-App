@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeControllerDelegate {
-    func reloadTableViewData(successCode: Int, data : [[String: Any]])
+    func reloadTableViewData(successCode: Int, data : [Story])
 }
 
 class HomeController {
@@ -18,7 +18,7 @@ class HomeController {
     
     #warning ("Create Get All Stories Function")
     func getStories() {
-        var data : [[String: Any]] = []
+        var data : [Story] = []
         var successCode = 1
         self.storyDB.getStories { querySnapshot, error in
             if let error = error {
@@ -26,7 +26,13 @@ class HomeController {
                 successCode = -1
             } else {
                 for document in querySnapshot!.documents {
-                    data.append(document.data())
+                    let documentData = document.data()
+                    let story = Story(
+                        title: documentData["title"] as! String,
+                        story: documentData["story"] as! String,
+                        isAnonym: documentData["is_anonym"] as! Bool
+                    )
+                    data.append(story)
                 }
             }
             self.delegate?.reloadTableViewData(successCode: successCode, data: data)

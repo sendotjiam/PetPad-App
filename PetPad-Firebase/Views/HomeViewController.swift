@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     private let homeController = HomeController()
     
-    var storyData : [[String: Any]] = []
+    var storyData : [Story] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,6 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(storyData.count)
         return storyData.count
     }
     
@@ -66,7 +65,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
 }
 
 extension HomeViewController : HomeControllerDelegate {
-    func reloadTableViewData(successCode: Int, data: [[String : Any]]) {
+    func reloadTableViewData(successCode: Int, data: [Story]) {
         storyData = data
         DispatchQueue.main.async {
             self.tableView.reloadData()
