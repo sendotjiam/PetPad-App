@@ -13,12 +13,15 @@ class HomeViewController: UIViewController {
     
     private let homeController = HomeController()
     
+    var storyData : [[String: Any]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "StoryCell", bundle: nil), forCellReuseIdentifier: "StoryCell")
         
+        homeController.delegate = self
         homeController.getStories()
 //        authenticateCurrentUser()
     }
@@ -52,14 +55,21 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        print(storyData.count)
+        return storyData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell", for: indexPath) as! StoryCell
         return cell
     }
-    
-    
 }
 
+extension HomeViewController : HomeControllerDelegate {
+    func reloadTableViewData(successCode: Int, data: [[String : Any]]) {
+        storyData = data
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}

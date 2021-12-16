@@ -7,12 +7,18 @@
 
 import Foundation
 
+protocol HomeControllerDelegate {
+    func reloadTableViewData(successCode: Int, data : [[String: Any]])
+}
+
 class HomeController {
     
     private let storyDB = StoryDB()
+    var delegate : HomeControllerDelegate?
     
     #warning ("Create Get All Stories Function")
-    func getStories() -> [Any] {
+    func getStories() {
+        var data : [[String: Any]] = []
         var successCode = 1
         self.storyDB.getStories { querySnapshot, error in
             if let error = error {
@@ -20,11 +26,11 @@ class HomeController {
                 successCode = -1
             } else {
                 for document in querySnapshot!.documents {
-                    print(document.data())
+                    data.append(document.data())
                 }
             }
+            self.delegate?.reloadTableViewData(successCode: successCode, data: data)
         }
-        return []
     }
     
 }
