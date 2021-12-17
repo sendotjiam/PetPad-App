@@ -11,38 +11,45 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="248" id="KGk-i7-Jjw" customClass="StoryCell" customModule="PetPad_Firebase" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="118" id="KGk-i7-Jjw" customClass="StoryCell" customModule="PetPad_Firebase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7l-Ic-ln0">
-                        <rect key="frame" x="16" y="8" width="288" height="232"/>
+                        <rect key="frame" x="16" y="8" width="288" height="102"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJ2-25-RO1">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Guk-2P-h48">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="102"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ayam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-4W-xca">
-                                        <rect key="frame" x="0.0" y="0.0" width="35" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ayam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-4W-xca">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="Ku3-k7-aVh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label tes test tes Label tes test tes Label tes test tes adf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ra-A2-Bua">
+                                        <rect key="frame" x="0.0" y="18" width="288" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by: Anonym" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBb-hA-QYb">
+                                        <rect key="frame" x="0.0" y="84" width="288" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="9eR-aO-7VA"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="vQo-M8-ACU"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label tes test tes Label tes test tes Label tes test tes adf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ra-A2-Bua">
-                                <rect key="frame" x="0.0" y="178" width="288" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MFy-SS-wEc">
                                 <rect key="frame" x="0.0" y="20" width="288" height="150"/>
                                 <constraints>
@@ -52,17 +59,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Ra-A2-Bua" firstAttribute="leading" secondItem="r7l-Ic-ln0" secondAttribute="leading" id="7OM-vG-jEF"/>
-                            <constraint firstItem="tJ2-25-RO1" firstAttribute="leading" secondItem="r7l-Ic-ln0" secondAttribute="leading" id="ETn-HH-lp0"/>
+                            <constraint firstItem="Guk-2P-h48" firstAttribute="leading" secondItem="r7l-Ic-ln0" secondAttribute="leading" id="5MO-f0-spO"/>
                             <constraint firstItem="MFy-SS-wEc" firstAttribute="leading" secondItem="r7l-Ic-ln0" secondAttribute="leading" id="LrM-Ax-BwK"/>
                             <constraint firstAttribute="trailing" secondItem="MFy-SS-wEc" secondAttribute="trailing" id="O70-aE-Daq"/>
-                            <constraint firstAttribute="trailing" secondItem="tJ2-25-RO1" secondAttribute="trailing" id="P7E-KZ-eqg"/>
-                            <constraint firstItem="tJ2-25-RO1" firstAttribute="top" secondItem="r7l-Ic-ln0" secondAttribute="top" id="So3-Ey-WI7"/>
-                            <constraint firstAttribute="trailing" secondItem="1Ra-A2-Bua" secondAttribute="trailing" id="aej-lo-Se9"/>
-                            <constraint firstAttribute="bottom" secondItem="1Ra-A2-Bua" secondAttribute="bottom" constant="8" id="g0a-Ao-ahe"/>
-                            <constraint firstItem="MFy-SS-wEc" firstAttribute="top" secondItem="tJ2-25-RO1" secondAttribute="bottom" id="sRw-Ws-5j1"/>
-                            <constraint firstItem="1Ra-A2-Bua" firstAttribute="top" secondItem="MFy-SS-wEc" secondAttribute="bottom" constant="8" id="vTd-A1-eaQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Guk-2P-h48" secondAttribute="bottom" id="UyO-JV-ogv"/>
+                            <constraint firstAttribute="trailing" secondItem="Guk-2P-h48" secondAttribute="trailing" id="e7I-V3-8oQ"/>
+                            <constraint firstItem="Guk-2P-h48" firstAttribute="top" secondItem="r7l-Ic-ln0" secondAttribute="top" id="mmc-tb-k5f"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MFy-SS-wEc"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <constraints>
@@ -73,7 +81,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+            <connections>
+                <outlet property="senderLabel" destination="YBb-hA-QYb" id="d2O-h9-T75"/>
+                <outlet property="storyLabel" destination="1Ra-A2-Bua" id="iSp-dD-FI0"/>
+                <outlet property="titleLabel" destination="F0G-4W-xca" id="73N-3T-2w7"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="102.45535714285714"/>
         </tableViewCell>
     </objects>
     <resources>
