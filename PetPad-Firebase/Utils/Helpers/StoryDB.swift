@@ -23,4 +23,8 @@ struct StoryDB {
     func getStories(completion : @escaping (FIRQuerySnapshotBlock)) {
         db.collection(Constant.STORY_COLLECTION).getDocuments(completion: completion)
     }
+    
+    func getStory(documentId : String, completion : @escaping (FIRDocumentSnapshotBlock)) {
+        db.collection(Constant.STORY_COLLECTION).document(documentId).getDocument(completion: completion)
+    }
 }

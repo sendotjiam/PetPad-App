@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         
         homeController.delegate = self
         homeController.getStories()
+        homeController.getStory(id: "tPcwHVpcWVJR51jTl1Zm")
 //        authenticateCurrentUser()
     }
     
@@ -72,5 +73,8 @@ extension HomeViewController : HomeControllerDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    func displayStoryContent(successCode: Int, data: Story?) {
+        print(data)
     }
 }

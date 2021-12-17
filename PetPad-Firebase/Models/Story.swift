@@ -8,6 +8,7 @@
 import Foundation
 
 struct Story {
+    let id : String
     let title : String
     let story : String
     let sender : String

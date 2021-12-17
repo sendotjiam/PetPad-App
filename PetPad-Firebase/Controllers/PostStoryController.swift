@@ -33,9 +33,4 @@ class PostStoryController {
         }
         return successCode == 1 ? true : false
     }
-    
-    #warning ("Create Get Specific Story Function")
-    func getStory() -> Any {
-        return 0
-    }
 }

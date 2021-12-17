@@ -9,6 +9,7 @@ import Foundation
 
 protocol HomeControllerDelegate {
     func reloadTableViewData(successCode: Int, data : [Story])
+    func displayStoryContent(successCode: Int, data: Story?)
 }
 
 class HomeController {
@@ -28,6 +29,7 @@ class HomeController {
                 for document in querySnapshot!.documents {
                     let documentData = document.data()
                     let story = Story(
+                        id: document.documentID,
                         title: documentData["title"] as! String,
                         story: documentData["story"] as! String,
                         sender: documentData["sender"] as! String
@@ -39,4 +41,23 @@ class HomeController {
         }
     }
     
+    #warning ("Create Get Specific Story Function")
+    func getStory(id : String) {
+        var successCode = 1
+        var story : Story?
+        self.storyDB.getStory(documentId: id) { (document, error) in
+            if error != nil || !document!.exists && document == nil {
+                successCode = -1
+                story = nil
+            } else {
+                story = Story(
+                    id: document!.documentID,
+                    title: document!["title"] as! String,
+                    story: document!["story"] as! String,
+                    sender: document!["sender"] as! String
+                )
+            }
+            self.delegate?.displayStoryContent(successCode: successCode, data: story ?? nil)
+        }
+    }
 }
