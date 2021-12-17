@@ -30,7 +30,7 @@ class HomeController {
                     let story = Story(
                         title: documentData["title"] as! String,
                         story: documentData["story"] as! String,
-                        isAnonym: documentData["is_anonym"] as! Bool
+                        sender: documentData["sender"] as! String
                     )
                     data.append(story)
                 }

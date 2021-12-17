@@ -10,5 +10,5 @@ import Foundation
 struct Story {
     let title : String
     let story : String
-    let isAnonym : Bool
+    let sender : String
 }

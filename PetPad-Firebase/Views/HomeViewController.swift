@@ -60,6 +60,8 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell", for: indexPath) as! StoryCell
+//        let content = storyData[indexPath.row]
+//        cell.setupContent(title: content.title, story: content.story, sender: content.sender)
         return cell
     }
 }

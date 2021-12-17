@@ -28,7 +28,7 @@ class PostStoryViewController: UIViewController {
             let isSuccessCreateNewStory = postStoryController.createNewStory(documentData: [
                 "title": titleField.text!,
                 "story": storyField.text!,
-                "is_anonym": isAnonymSenderSwitch.isOn
+                "sender": isAnonymSenderSwitch.isOn ? "Anonym" : ""
             ]);
             
             if isSuccessCreateNewStory {
