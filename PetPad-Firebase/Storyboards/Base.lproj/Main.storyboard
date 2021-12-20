@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Me-->
+        <!--Profile-->
         <scene sceneID="7eV-h8-M80">
             <objects>
-                <viewController id="yBF-w6-R2H" sceneMemberID="viewController">
+                <viewController id="yBF-w6-R2H" customClass="ProfileViewController" customModule="PetPad_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xHL-md-r8k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,25 +68,64 @@
                                     <constraint firstItem="1Eh-7V-gc3" firstAttribute="top" secondItem="D5y-lF-u7Y" secondAttribute="top" constant="16" id="mit-X2-Ump"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k16-k4-76i">
+                                <rect key="frame" x="0.0" y="192" width="414" height="621"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="olB-e8-HUX">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="olB-e8-HUX" id="fMm-T0-EAY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-Fj-Lxz">
+                                <rect key="frame" x="16" y="160" width="382" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjB-EJ-CQ1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="k16-k4-76i" firstAttribute="bottom" secondItem="tjB-EJ-CQ1" secondAttribute="bottom" id="4JI-94-9T0"/>
+                            <constraint firstItem="tjB-EJ-CQ1" firstAttribute="trailing" secondItem="KM4-Fj-Lxz" secondAttribute="trailing" constant="16" id="6Kj-Sl-2DQ"/>
                             <constraint firstItem="tjB-EJ-CQ1" firstAttribute="trailing" secondItem="hou-Ll-AZs" secondAttribute="trailing" constant="16" id="Kyd-Q7-tCj"/>
                             <constraint firstItem="hou-Ll-AZs" firstAttribute="leading" secondItem="tjB-EJ-CQ1" secondAttribute="leading" constant="16" id="MUL-Uk-MAe"/>
+                            <constraint firstItem="KM4-Fj-Lxz" firstAttribute="top" secondItem="D5y-lF-u7Y" secondAttribute="bottom" constant="8" id="QmA-ve-Dxy"/>
+                            <constraint firstItem="k16-k4-76i" firstAttribute="top" secondItem="KM4-Fj-Lxz" secondAttribute="bottom" constant="8" id="T8C-1W-zlC"/>
                             <constraint firstItem="D5y-lF-u7Y" firstAttribute="trailing" secondItem="tjB-EJ-CQ1" secondAttribute="trailing" id="Ubw-w4-GRS"/>
                             <constraint firstItem="D5y-lF-u7Y" firstAttribute="leading" secondItem="tjB-EJ-CQ1" secondAttribute="leading" id="aW2-0x-qcD"/>
+                            <constraint firstItem="k16-k4-76i" firstAttribute="top" secondItem="KM4-Fj-Lxz" secondAttribute="bottom" constant="8" id="bTw-2x-JT4"/>
+                            <constraint firstItem="KM4-Fj-Lxz" firstAttribute="leading" secondItem="tjB-EJ-CQ1" secondAttribute="leading" constant="16" id="fNU-gF-SxY"/>
+                            <constraint firstItem="k16-k4-76i" firstAttribute="leading" secondItem="tjB-EJ-CQ1" secondAttribute="leading" id="hwU-cK-GmW"/>
                             <constraint firstItem="D5y-lF-u7Y" firstAttribute="top" secondItem="tjB-EJ-CQ1" secondAttribute="top" constant="16" id="jIC-nA-tDy"/>
+                            <constraint firstItem="k16-k4-76i" firstAttribute="trailing" secondItem="tjB-EJ-CQ1" secondAttribute="trailing" id="sa4-GL-e98"/>
                             <constraint firstItem="tjB-EJ-CQ1" firstAttribute="bottom" secondItem="hou-Ll-AZs" secondAttribute="bottom" constant="16" id="uZs-wn-V2f"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hou-Ll-AZs"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" image="person.fill" catalog="system" id="Tu8-7d-Rpx"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="Tu8-7d-Rpx"/>
+                    <connections>
+                        <outlet property="nicknameLabel" destination="QiU-ZL-Sca" id="gzR-UH-F2L"/>
+                        <outlet property="profileImageView" destination="ZsM-4w-dw8" id="DPu-Jb-Pe9"/>
+                        <outlet property="tableView" destination="k16-k4-76i" id="jVE-Rh-pxx"/>
+                        <outlet property="usernameLabel" destination="6ev-Lg-SPc" id="iIz-jQ-G4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36Y-xa-eEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7.2463768115942031" y="247.76785714285714"/>
         </scene>
-        <!--Stories-->
+        <!--Home-->
         <scene sceneID="SiE-Lt-KRN">
             <objects>
                 <viewController id="XQz-sl-NoM" customClass="HomeViewController" customModule="PetPad_Firebase" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +179,7 @@
                             <constraint firstItem="nh9-wG-tVK" firstAttribute="top" secondItem="F4e-Ap-UHR" secondAttribute="top" constant="16" id="wUo-Pb-yFZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stories" image="star.fill" catalog="system" id="sXm-oV-sfe"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="star.fill" catalog="system" id="sXm-oV-sfe"/>
                     <connections>
                         <outlet property="tableView" destination="tV5-Ka-ot6" id="qFZ-YM-415"/>
                     </connections>

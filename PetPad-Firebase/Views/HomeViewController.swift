@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     private let homeController = HomeController()
     
-    var storyData : [Story] = []
+    private var storyData : [Story] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         
         homeController.delegate = self
         homeController.getStories()
-        homeController.getStory(id: "tPcwHVpcWVJR51jTl1Zm")
+//        homeController.getStory(id: "tPcwHVpcWVJR51jTl1Zm")
 //        authenticateCurrentUser()
     }
     
