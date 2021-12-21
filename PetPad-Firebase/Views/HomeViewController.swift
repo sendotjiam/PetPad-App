@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
@@ -24,7 +25,7 @@ class HomeViewController: UIViewController {
         homeController.delegate = self
         homeController.getStories()
 //        homeController.getStory(id: "tPcwHVpcWVJR51jTl1Zm")
-//        authenticateCurrentUser()
+        authenticateCurrentUser()
     }
     
 //    override func viewDidAppear(_ animated: Bool) {
@@ -40,17 +41,13 @@ class HomeViewController: UIViewController {
 //        }
 //    }
     
-//    private func authenticateCurrentUser() {
-//        if Auth.auth().currentUser == nil {
-//            DispatchQueue.main.async {
-//                let navController = UINavigationController(rootViewController: LoginViewController())
-//                navController.navigationBar.barStyle = .black
-//                self.present(navController, animated: true, completion: nil)
-//            }
-//        } else {
-//            print(Auth.auth().currentUser!)
-//        }
-//    }
+    private func authenticateCurrentUser() {
+        if Auth.auth().currentUser == nil {
+            print("NO USER")
+        } else {
+            print(Auth.auth().currentUser!)
+        }
+    }
     
 }
 
