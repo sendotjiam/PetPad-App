@@ -9,21 +9,18 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet var emailField: UITextField!
-    @IBOutlet var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-        
-        // Do any additional setup after loading the view.
-//        print("TES", self.navigationController)
     }
     
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(true)
-//
 //    }
 //
 //    @IBAction func signInBtnTapped(_ sender: Any) {
@@ -59,11 +56,13 @@ class LoginViewController: UIViewController {
 //        return true
 //    }
 //
-//    @IBAction func goToSignUpTapped(_ sender: Any) {
-//        self.performSegue(withIdentifier: "goToSignUp", sender: nil)
-//    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        self.performSegue(withIdentifier: "goToSignUp", sender: nil)
-//    }
+    @IBAction func loginTapped(_ sender: Any) {
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+    }
+    @IBAction func goToSignUpTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToSignUp", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.performSegue(withIdentifier: "goToSignUp", sender: nil)
+    }
 }

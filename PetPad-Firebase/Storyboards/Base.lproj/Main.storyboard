@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile-->
+        <!--Item-->
         <scene sceneID="7eV-h8-M80">
             <objects>
                 <viewController id="yBF-w6-R2H" customClass="ProfileViewController" customModule="PetPad_Firebase" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +113,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="Tu8-7d-Rpx"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="A9p-wd-zcx"/>
+                    <navigationItem key="navigationItem" id="rl4-rL-VSb"/>
                     <connections>
                         <outlet property="nicknameLabel" destination="QiU-ZL-Sca" id="gzR-UH-F2L"/>
                         <outlet property="profileImageView" destination="ZsM-4w-dw8" id="DPu-Jb-Pe9"/>
@@ -123,12 +124,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36Y-xa-eEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="247.76785714285714"/>
+            <point key="canvasLocation" x="-7" y="338"/>
         </scene>
-        <!--Home-->
+        <!--Item-->
         <scene sceneID="SiE-Lt-KRN">
             <objects>
-                <viewController id="XQz-sl-NoM" customClass="HomeViewController" customModule="PetPad_Firebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="XQz-sl-NoM" customClass="HomeViewController" customModule="PetPad_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Leu-nR-pps">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,14 +180,15 @@
                             <constraint firstItem="nh9-wG-tVK" firstAttribute="top" secondItem="F4e-Ap-UHR" secondAttribute="top" constant="16" id="wUo-Pb-yFZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="star.fill" catalog="system" id="sXm-oV-sfe"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="x8M-dM-Ode"/>
+                    <navigationItem key="navigationItem" id="kGY-yh-xJe"/>
                     <connections>
-                        <outlet property="tableView" destination="tV5-Ka-ot6" id="qFZ-YM-415"/>
+                        <outlet property="tableView" destination="tV5-Ka-ot6" id="965-SB-fr7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUU-cd-ciX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="-397.09821428571428"/>
+            <point key="canvasLocation" x="-7" y="-397"/>
         </scene>
         <!--Post Story View Controller-->
         <scene sceneID="YmL-dd-mYm">
@@ -390,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Xq-4c-3RJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="-397.09821428571428"/>
+            <point key="canvasLocation" x="1197" y="-397"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Jhv-AK-K6J">
@@ -402,8 +404,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="XQz-sl-NoM" kind="relationship" relationship="viewControllers" id="qGg-bZ-XSE"/>
-                        <segue destination="yBF-w6-R2H" kind="relationship" relationship="viewControllers" id="Dvp-ct-Za0"/>
+                        <segue destination="XQz-sl-NoM" kind="relationship" relationship="viewControllers" id="6II-ak-GWU"/>
+                        <segue destination="yBF-w6-R2H" kind="relationship" relationship="viewControllers" id="tKc-54-RvZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gc-UJ-rZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -419,19 +421,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PetPad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-lQ-Aqo">
-                                <rect key="frame" x="20" y="60" width="374" height="38.5"/>
+                                <rect key="frame" x="20" y="104" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-op-Qq9">
-                                <rect key="frame" x="20" y="130.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="174.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vu8-C5-Owa">
-                                <rect key="frame" x="20" y="175" width="374" height="55"/>
+                                <rect key="frame" x="20" y="219" width="374" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-GZ-dmv">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="17"/>
@@ -451,7 +453,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NXY-dP-ShY">
-                                <rect key="frame" x="20" y="246" width="374" height="55"/>
+                                <rect key="frame" x="20" y="290" width="374" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llr-I5-ijM">
                                         <rect key="frame" x="0.0" y="0.0" width="61.5" height="17"/>
@@ -471,14 +473,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-wi-JHL">
-                                <rect key="frame" x="20" y="361" width="374" height="48"/>
+                                <rect key="frame" x="20" y="405" width="374" height="48"/>
                                 <color key="backgroundColor" red="0.82876968380000005" green="0.42623364930000002" blue="0.2069097459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="sQn-xI-gYc"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="signInBtnTapped:" destination="8Ql-Mj-fAr" eventType="touchUpInside" id="qZz-UM-S4T"/>
+                                    <action selector="loginTapped:" destination="8Ql-Mj-fAr" eventType="touchUpInside" id="LpI-jT-YbG"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WcA-6d-Fkk">
@@ -525,24 +527,25 @@
                     <navigationItem key="navigationItem" id="vsG-VO-BuQ"/>
                     <connections>
                         <outlet property="emailField" destination="Y0a-da-5SR" id="xfO-hH-xgT"/>
+                        <outlet property="loginBtn" destination="9z2-wi-JHL" id="XSd-vf-eDf"/>
                         <outlet property="passwordField" destination="UbQ-hZ-Zr0" id="eQ6-X2-mCB"/>
                         <segue destination="85j-k3-eXl" kind="push" identifier="goToSignUp" id="J3L-4v-I7j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGC-A6-aue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3509" y="84"/>
+            <point key="canvasLocation" x="902.89855072463774" y="-1094.1964285714284"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="gIz-0s-ydC">
             <objects>
                 <viewController id="85j-k3-eXl" customClass="RegisterViewController" customModule="PetPad_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gF-JT-2Oh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FmH-u0-vYW">
-                                <rect key="frame" x="20" y="131" width="374" height="55"/>
+                                <rect key="frame" x="20" y="219" width="374" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-qi-DpB">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="17"/>
@@ -562,7 +565,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fXa-ac-jvm">
-                                <rect key="frame" x="20" y="344" width="374" height="55"/>
+                                <rect key="frame" x="20" y="432" width="374" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwT-d8-xcB">
                                         <rect key="frame" x="0.0" y="0.0" width="116" height="17"/>
@@ -582,7 +585,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cJh-wC-1rr">
-                                <rect key="frame" x="20" y="273" width="374" height="55"/>
+                                <rect key="frame" x="20" y="361" width="374" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp2-FL-IaS">
                                         <rect key="frame" x="0.0" y="0.0" width="61.5" height="17"/>
@@ -602,7 +605,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Icf-yO-2e9">
-                                <rect key="frame" x="20" y="202" width="374" height="55"/>
+                                <rect key="frame" x="20" y="290" width="374" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k47-Da-2TA">
                                         <rect key="frame" x="0.0" y="0.0" width="65.5" height="17"/>
@@ -622,19 +625,19 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PetPad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra2-v5-K04">
-                                <rect key="frame" x="20" y="16" width="374" height="38.5"/>
+                                <rect key="frame" x="20" y="104" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-7Q-icp">
-                                <rect key="frame" x="20" y="86.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="174.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-ew-Ra4">
-                                <rect key="frame" x="20" y="459" width="374" height="48"/>
+                                <rect key="frame" x="20" y="547" width="374" height="48"/>
                                 <color key="backgroundColor" red="0.82876968380000005" green="0.42623364930000002" blue="0.2069097459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="5rA-zC-UcL"/>
@@ -681,13 +684,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9f-BR-orn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3509" y="814"/>
+            <point key="canvasLocation" x="1999" y="-1094"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xfQ-KH-JjO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sw6-QC-CJM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DMj-DR-VqC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Ql-Mj-fAr" kind="relationship" relationship="rootViewController" id="jOf-re-p7r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WlX-eD-d1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="-1094.1964285714284"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
