@@ -496,7 +496,7 @@
                                         <rect key="frame" x="187" y="0.0" width="54" height="30"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <action selector="goToSignUpTapped:" destination="8Ql-Mj-fAr" eventType="touchUpInside" id="EBS-rJ-sWQ"/>
+                                            <segue destination="85j-k3-eXl" kind="presentation" id="JnT-Oe-RP9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -529,7 +529,6 @@
                         <outlet property="emailField" destination="Y0a-da-5SR" id="xfO-hH-xgT"/>
                         <outlet property="loginBtn" destination="9z2-wi-JHL" id="XSd-vf-eDf"/>
                         <outlet property="passwordField" destination="UbQ-hZ-Zr0" id="eQ6-X2-mCB"/>
-                        <segue destination="85j-k3-eXl" kind="push" identifier="goToSignUp" id="J3L-4v-I7j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGC-A6-aue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

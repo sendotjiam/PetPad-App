@@ -33,39 +33,33 @@ class LoginViewController: UIViewController {
         return true
     }
     
-    private func handleLogin() -> Bool {
-        var didSuccessLogin = false
+    private func handleLogin() {
         guard
             let email = emailField.text,
             let password = passwordField.text
-        else { return didSuccessLogin }
+        else { return }
         if validateData(email, password) {
-            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-                guard error != nil else {
-                    print(error?.localizedDescription)
-                    return
+            DispatchQueue.global().async {
+                Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                    guard error == nil else { return }
+                    DispatchQueue.main.async { self.presentHomeVC() }
                 }
-                didSuccessLogin = true
             }
         }
-        return didSuccessLogin
+    }
+    
+    private func presentHomeVC() {
+        guard let tabBarController = self.storyboard?.instantiateViewController(identifier: "TabBarController") as? UITabBarController else { return }
+        tabBarController.modalPresentationStyle = .fullScreen
+        tabBarController.selectedIndex = 0
+        self.present(tabBarController, animated: true, completion: nil)
     }
     
     @IBAction func loginTapped(_ sender: Any) {
-        if handleLogin() {
-            guard let tabBarController = self.storyboard?.instantiateViewController(identifier: "TabBarController") as? UITabBarController else {
-                print("Something wrong in storyboard")
-                return
-            }
-            tabBarController.modalPresentationStyle = .fullScreen
-            tabBarController.selectedIndex = 0
-            self.present(tabBarController, animated: true, completion: nil)
-        }
+        print("MASUK")
+        handleLogin()
     }
-    @IBAction func goToSignUpTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToSignUp", sender: nil)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.performSegue(withIdentifier: "goToSignUp", sender: nil)
+    @IBAction func presentSignUpTapped(_ sender: Any) {
+        self.present(RegisterViewController(), animated: true, completion: nil)
     }
 }

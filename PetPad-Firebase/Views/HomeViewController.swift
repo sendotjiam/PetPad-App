@@ -35,11 +35,12 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func logoutTapped() {
-        //        do {
-        //            try Auth.auth().signOut()
-        //        } catch {
-        //            print(error.localizedDescription)
-        //        }
+        do {
+            try? Auth.auth().signOut()
+            print("LOGOUT")
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
     private func authenticateCurrentUser() {
