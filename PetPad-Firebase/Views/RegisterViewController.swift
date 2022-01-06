@@ -28,17 +28,27 @@ class RegisterViewController: UIViewController {
             let confirmPassword = confirmPasswordField.text
         else { return }
         if validateData(email : email, password: password, username: username, confirmPassword: confirmPassword) {
-            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                if error != nil {
-                    print(error?.localizedDescription)
-                }
-                else {
-                    self.dismiss(animated: true, completion: nil)
+            DispatchQueue.global().async {
+                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                    if error != nil {
+                        print(error?.localizedDescription)
+                        return
+                    }
+                    DispatchQueue.main.async {
+                        self.presentHomeVC()
+                    }
                 }
             }
         }
     }
     
+    private func presentHomeVC() {
+        guard let tabBarController = self.storyboard?.instantiateViewController(identifier: "TabBarController") as? UITabBarController else { return }
+        tabBarController.modalPresentationStyle = .fullScreen
+        tabBarController.selectedIndex = 0
+        self.present(tabBarController, animated: true, completion: nil)
+    }
+
     private func validateData(email: String, password : String, username : String, confirmPassword : String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         if !NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email){

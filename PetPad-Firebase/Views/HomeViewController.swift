@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         
         homeController.delegate = self
         homeController.getStories()
-        //        homeController.getStory(id: "tPcwHVpcWVJR51jTl1Zm")
+//         homeController.getStory(id: "tPcwHVpcWVJR51jTl1Zm")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,12 +35,8 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func logoutTapped() {
-        do {
-            try? Auth.auth().signOut()
-            print("LOGOUT")
-        } catch let error {
-            print(error.localizedDescription)
-        }
+        try? Auth.auth().signOut()
+        self.dismiss(animated: true)
     }
     
     private func authenticateCurrentUser() {
