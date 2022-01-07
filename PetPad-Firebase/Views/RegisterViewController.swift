@@ -9,14 +9,19 @@ import UIKit
 import FirebaseAuth
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet var emailField: UITextField!
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var confirmPasswordField: UITextField!
+    
+    var registerController = RegisterController()
+    var validationSuccess = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        registerController.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -27,17 +32,18 @@ class RegisterViewController: UIViewController {
             let username = usernameField.text,
             let confirmPassword = confirmPasswordField.text
         else { return }
-        if validateData(email : email, password: password, username: username, confirmPassword: confirmPassword) {
-            DispatchQueue.global().async {
-                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                    if error != nil {
-                        print(error?.localizedDescription)
-                        return
-                    }
-                    DispatchQueue.main.async {
-                        self.presentHomeVC()
-                    }
-                }
+        
+        registerController.validateData(email, password, username, confirmPassword)
+        
+        if validationSuccess {
+            registerController.registerUser(email, password) { result, error in
+                if error != nil {
+                    let alert = self.createAlert(title: "Please try again later",
+                                                 message: "Error occured while registering new user data.",
+                                                 didReceiveError: true)
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                } else { DispatchQueue.main.async { self.presentHomeVC() } }
             }
         }
     }
@@ -48,37 +54,15 @@ class RegisterViewController: UIViewController {
         tabBarController.selectedIndex = 0
         self.present(tabBarController, animated: true, completion: nil)
     }
-
-    private func validateData(email: String, password : String, username : String, confirmPassword : String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
-        if !NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email){
-            print("EMAIL ERROR")
-            return false
-        }
-        if username.count < 3 || username.count > 10 {
-            print("USERNAME ERROR")
-            return false
-        }
-        if password.count < 8 || password.count > 20 {
-            print("PASSWORD ERROR")
-            return false
-        }
-        if confirmPassword != password {
-            print("CONFIRM PASSWORD ERROR")
-            return false
-        }
-        return true
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
+extension RegisterViewController : RegisterControllerDelegate {
+    func didValidateError(title : String, message: String) {
+        let alert = createAlert(title: title, message: message, didReceiveError: true)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func didValidateSuccess() {
+        self.validationSuccess = true
+    }
+}
