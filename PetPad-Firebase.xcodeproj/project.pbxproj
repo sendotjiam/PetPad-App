@@ -29,6 +29,9 @@
 		62E9D9732760ABD2001F8732 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9D9722760ABD2001F8732 /* UIView+Ext.swift */; };
 		62F2F0AF2769DA57006079A7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F2F0AE2769DA57006079A7 /* Constant.swift */; };
 		62F2F0B12769DF58006079A7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F2F0B02769DF58006079A7 /* HomeController.swift */; };
+		62F58567279C50FC00C8AA98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F58566279C50FC00C8AA98 /* DetailViewController.swift */; };
+		62F5856A279C511500C8AA98 /* StoryCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F58568279C511500C8AA98 /* StoryCommentCell.swift */; };
+		62F5856B279C511500C8AA98 /* StoryCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F58569279C511500C8AA98 /* StoryCommentCell.xib */; };
 		BDD4F41141C21BC14F22E0FF /* Pods_PetPad_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9861293977550EAEDC6F4DA /* Pods_PetPad_Firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,9 @@
 		62E9D9722760ABD2001F8732 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		62F2F0AE2769DA57006079A7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		62F2F0B02769DF58006079A7 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		62F58566279C50FC00C8AA98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		62F58568279C511500C8AA98 /* StoryCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCommentCell.swift; sourceTree = "<group>"; };
+		62F58569279C511500C8AA98 /* StoryCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCommentCell.xib; sourceTree = "<group>"; };
 		F9861293977550EAEDC6F4DA /* Pods_PetPad_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetPad_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,8 @@
 			children = (
 				62580D0C275E484400125731 /* StoryCell.swift */,
 				62580D0D275E484400125731 /* StoryCell.xib */,
+				62F58568279C511500C8AA98 /* StoryCommentCell.swift */,
+				62F58569279C511500C8AA98 /* StoryCommentCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 				6262C510271E90D8005A3AE9 /* RegisterViewController.swift */,
 				62E9D96F2760A965001F8732 /* PostStoryViewController.swift */,
 				6266A26027708FFA00A44764 /* ProfileViewController.swift */,
+				62F58566279C50FC00C8AA98 /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +298,7 @@
 				62912332271DA86E00BBB2D6 /* LaunchScreen.storyboard in Resources */,
 				6285B1DA273D64D600495DC6 /* GoogleService-Info.plist in Resources */,
 				6291232F271DA86E00BBB2D6 /* Assets.xcassets in Resources */,
+				62F5856B279C511500C8AA98 /* StoryCommentCell.xib in Resources */,
 				6291232D271DA86B00BBB2D6 /* Main.storyboard in Resources */,
 				62580D0F275E484400125731 /* StoryCell.xib in Resources */,
 			);
@@ -346,12 +356,14 @@
 				627BCD6727675193009B3C56 /* UserDB.swift in Sources */,
 				627BCD6527673F83009B3C56 /* StoryDB.swift in Sources */,
 				62F2F0B12769DF58006079A7 /* HomeController.swift in Sources */,
+				62F5856A279C511500C8AA98 /* StoryCommentCell.swift in Sources */,
 				62E029AE27219F160033E924 /* SceneDelegate.swift in Sources */,
 				6262C511271E90D8005A3AE9 /* RegisterViewController.swift in Sources */,
 				62E029B62721A90D0033E924 /* UIViewController+Ext.swift in Sources */,
 				62580D0E275E484400125731 /* StoryCell.swift in Sources */,
 				6266A26127708FFA00A44764 /* ProfileViewController.swift in Sources */,
 				6266A25F27708FD100A44764 /* ProfileController.swift in Sources */,
+				62F58567279C50FC00C8AA98 /* DetailViewController.swift in Sources */,
 				6291232A271DA86B00BBB2D6 /* HomeViewController.swift in Sources */,
 				6211AF592768E5D70005402E /* PostStoryController.swift in Sources */,
 				62E9D9732760ABD2001F8732 /* UIView+Ext.swift in Sources */,

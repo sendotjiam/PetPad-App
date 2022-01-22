@@ -5,7 +5,7 @@ target 'PetPad-Firebase' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for PetPad-Firebase
+  # Pods for PetPad-Firebase 
 #  pod 'Firebase'
 #  pod 'Firebase/Core'
   pod 'Firebase/Auth'
